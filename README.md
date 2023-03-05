@@ -25,7 +25,7 @@ Features Provided:
 		2.3.View Group information:  http://127.0.0.1:5000/groups/<group_id>/
 		2.4.Get Older Messages : http://127.0.0.1:5000/groups/<group_id>/messages
 3.Admin:
-		
+
 		3.1.Only admin can add and remove the members of the group [Refer: Edit Group Details]
 4.Members of the group can chat with each other
 5.Live notification when members join or leave the chat group
