@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChitChat App</title>
+</head>
+<body>
+<h1>ChitChat</h1>
+<h3>Hi {% if current_user.is_authenticated %}{{ current_user.username }}{% else %}Guest{% endif %}</h3>
+
+{% if current_user.is_authenticated %}
+    <h3>My Groups:</h3>
+    <ul>
+        {% for group in groups %}
+            <li><a href="/groups/{{ group._id.group_id }}">{{ group.group_name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endif %}
+</body>
+</html>

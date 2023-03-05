@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChitChat App</title>
+</head>
+<body>
+<h1>ChitChat</h1>
+<h2>Edit Group</h2>
+<h3 style="color:blue;">{{ message }}</h3>
+<form method="post">
+    <label>Group Name:</label>
+    <br>
+    <input type="text" name="group_name" value="{{ group.name }}">
+    <br>
+    <h4> <i style="color:red;"> Only admin can edit group member </i> </h4>
+    <label>Members:</label>
+    <br>
+    <input type="text" name="members" value="{{ group_members_str }}">
+    <br>
+    <br>
+    <button type="submit">Edit</button>
+</form>
+</body>
+</html>

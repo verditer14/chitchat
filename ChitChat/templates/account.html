@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChitChat App</title>
+</head>
+<body>
+<h1>ChitChat</h1>
+<h2>Edit User Details</h2>
+<h3 style="color:blue;">{{ message }}</h3>
+<form method="post">
+    <label>Username:</label>
+    <br>
+    <input type="text" name="username" value="{{ username }}">
+    <br>
+
+    <label>Email Id:</label>
+    <br>
+    <input type="text" name="email" value="{{ email }}">
+    <br>
+    <br>
+    <button type="submit">Edit</button>
+</form>
+</body>
+</html>
