@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash,check_password_hash
 from pymongo import MongoClient, DESCENDING
 
 
-msg_limit= 3
+msg_limit= 10
 
 class User:
 
